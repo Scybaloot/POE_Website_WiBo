@@ -1,0 +1,26 @@
+Go to 
+csato@ubuntu:~/Documents/github/POE_Website_WiBo$ 
+
+git pull
+
+
+git add . 
+git commit -m "comment here"
+
+git push
+
+
+Do HTTP 800 stuff
+csato@ubuntu:~/Documents/github/POE_Website_WiBo$ python -m SimpleHTTPServerServing HTTP on 0.0.0.0 port 8000 ...
+
+
+Setup Git Repo Locally
+
+Set up ssh to Github
+
+in a directory, 
+git clone https://github.com/Scybaloot/POE_Website_WiBo.git
+
+cd POE_Website_WiBo
+
+

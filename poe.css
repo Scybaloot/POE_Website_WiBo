@@ -1,21 +1,87 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;  
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/*----------------my stuff below------------------*/
+
+header, header a
+{
+padding:0;
+margin:0;
+}
 
 .body_tag
 {
-border-right-style:solid;
-border-left-style:solid;
+border-right:solid 2px #21284f;
+border-left:solid 2px #21284f;
 margin:0 auto;
 width:1000px;
 height:600px;
-background-color:white;
+color:#21284f;
+
 }
 
 .mainhead_tag
 {
-color:#000099;
 text-align:center;
-background-color:white;
+color:White;
+background-color:#21284f;
 font-family:"Courier New";
+padding:25px;
+font-size: 30px;
+
+
+}
+.text_mainhead
+{
+vertical-align:middle;
 }
 
 .p_tag
@@ -23,3 +89,53 @@ font-family:"Courier New";
 font-family:"Courier New";
 font-size:20px;
 }
+
+a:link {text-decoration:none;
+	color:#white;}    /* unvisited link */
+a:visited {text-decoration:none;} /* visited link */
+a:hover {text-decoration:underline;}   /* mouse over link */
+a:active {text-decoration:underline;}  /* selected link */
+
+/*This is the division for the collumns*/
+
+#maincontainer{
+width: 840px; /*Width of main container*/
+margin: 0 auto; /*Center container on page*/
+}
+
+#contentwrapper{
+float: left;
+width: 100%;
+}
+
+#contentcolumn{
+display:inline-block;
+float:left;
+width: 370px; /*Margin for content column. Should be (RightColumnWidth + LeftColumnWidth)*/
+}
+
+#leftcolumn{
+display:inline-block;
+float: left;
+width: 180px; /*Width of left column in pixel*/
+ /*Set margin to -(LeftColumnWidth + RightColumnWidth)*/
+background-color: #1f6fbf;
+}
+
+#rightcolumn{
+display:inline-block;
+float: left;
+width: 190px; /*Width of right column in pixels*/
+ /*Set margin to -RightColumnWidth*/
+background-color: #87bef5;
+}
+
+/*colors
+dark purple  #d13d82
+light purple #9f7db5
+dark blue    #21284f
+sorta dark blue  #253387
+medium blue  #1f6fbf
+light blue   #87bef5
+
+*/
