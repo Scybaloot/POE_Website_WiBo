@@ -1,0 +1,25 @@
+
+
+.body_tag
+{
+border-right-style:solid;
+border-left-style:solid;
+margin:0 auto;
+width:1000px;
+height:600px;
+background-color:white;
+}
+
+.mainhead_tag
+{
+color:#000099;
+text-align:center;
+background-color:white;
+font-family:"Courier New";
+}
+
+.p_tag
+{
+font-family:"Courier New";
+font-size:20px;
+}
