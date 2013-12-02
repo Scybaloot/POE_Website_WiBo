@@ -62,8 +62,8 @@ margin:0;
 border-right:solid 2px #21284f;
 border-left:solid 2px #21284f;
 margin:0 auto;
-width:1000px;
-height:600px;
+width:1200px;
+height:710px;
 color:#21284f;
 
 }
@@ -71,17 +71,20 @@ color:#21284f;
 .mainhead_tag
 {
 text-align:center;
-color:White;
+color:white;
 background-color:#21284f;
 font-family:"Courier New";
-padding:25px;
-font-size: 30px;
-
-
+padding:18px;
+font-size: 40px;
+border-bottom: solid 1px #1f6fbf;
 }
-.text_mainhead
-{
-vertical-align:middle;
+
+.nav_bar_tag{
+	text-align: center;
+	font-size: 18px;
+	color: #87bef5;
+	background-color: #21284f;
+	padding:10px;
 }
 
 .p_tag
@@ -91,15 +94,20 @@ font-size:20px;
 }
 
 a:link {text-decoration:none;
-	color:#white;}    /* unvisited link */
+	color:white;}    /* unvisited link */
 a:visited {text-decoration:none;} /* visited link */
 a:hover {text-decoration:underline;}   /* mouse over link */
 a:active {text-decoration:underline;}  /* selected link */
 
+#background-color{
+	padding: -10px;
+	background-color: #21284f;
+}
+
 /*This is the division for the collumns*/
 
 #maincontainer{
-width: 840px; /*Width of main container*/
+width: 1200px; /*Width of main container*/
 margin: 0 auto; /*Center container on page*/
 }
 
@@ -108,28 +116,51 @@ float: left;
 width: 100%;
 }
 
-#contentcolumn{
+#Diagramcolumn{
 display:inline-block;
 float:left;
-width: 370px; /*Margin for content column. Should be (RightColumnWidth + LeftColumnWidth)*/
+padding:50px;
+width: 400px; /*Margin for content column. Should be (RightColumnWidth + LeftColumnWidth)*/
 }
 
-#leftcolumn{
+#descriptioncolumn{
+border-left:solid 2px #1f6fbf;
+border-right:solid 2px #1f6fbf;
 display:inline-block;
 float: left;
-width: 180px; /*Width of left column in pixel*/
+height:610px;
+padding:50px;
+width: 396px; /*Width of left column in pixel*/
  /*Set margin to -(LeftColumnWidth + RightColumnWidth)*/
-background-color: #1f6fbf;
+
 }
 
-#rightcolumn{
+#subcomponentcolumn{
 display:inline-block;
 float: left;
-width: 190px; /*Width of right column in pixels*/
+height:710px;
+width: 200px; /*Width of right column in pixels*/
  /*Set margin to -RightColumnWidth*/
-background-color: #87bef5;
+background-color: white;
 }
 
+#descriptionbuttons{
+	text-align: center;
+	width:150px;
+	height:50px;
+	margin:25px;
+	border-bottom:solid 2px #21284f
+}
+
+#columnteamdescription{
+	width: 340px; 
+	height:600px;
+	display: inline-block;
+}
+#pictureofteam{
+	padding: 20px;
+	display: inline-block;
+}
 /*colors
 dark purple  #d13d82
 light purple #9f7db5
