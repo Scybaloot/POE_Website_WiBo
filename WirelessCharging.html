@@ -38,19 +38,33 @@
 				</div>
 
 				<div id="descriptioncolumn">
-					Lorem ipsum lorem impusmLorem ipsum lorem impusmLorem ipsum lorem impusmLorem ipsum lorem impusmLorem ipsum lorem impusmLorem ipsum lorem impusmLorem ipsum lorem impusmLorem ipsum lorem impusmLorem ipsum lorem impusmLorem ipsum lorem impusmLorem ipsum lorem impusmLorem ipsum lorem impusmLorem ipsum lorem impusmLorem ipsum lorem impusmLorem ipsum lorem impusmLorem ipsum lorem impusm
+					<p>
+					Power is transmitted from the charging station to the robot using wireless inductive charging.
+<br>
+Here is a high level view of what’s going on:
+<br>
+[transmitter circuit here]
+<br>
+The transmitter’s H-bridge generates a high voltage square wave to drive an LC circuit, the L being a giant coil capable of generating a substantial magnetic field. The frequency of this square wave is matched to the resonance frequency of this LC circuit.
+<br>
+[receiver circuit here]
+On the robot, there is another LC circuit tuned to the frequency of the square wave. The receiving coil picks up the oscillating magnetic field, which induces an alternating current. This current is rectified and filtered into DC power, which is fed into a voltage regulator, and then a USB battery charger.
+				</p>
 				</div>
 
 				<div id="subcomponentcolumn">
 					
 					<div id="descriptionbuttons" >
-						Resonance
+						LC Frequency Matching
 					</div>
 					<div id="descriptionbuttons">
 						H-bridge
 					</div>
 					<div id="descriptionbuttons">
-						materials
+						Receiver Load Balancing
+					</div>
+					<div id="descriptionbuttons">
+						Voltage Regulator
 					</div>
 				</div>
 

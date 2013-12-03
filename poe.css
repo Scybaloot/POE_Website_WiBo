@@ -149,7 +149,7 @@ background-color: white;
 	width:150px;
 	height:50px;
 	margin:25px;
-	border-bottom:solid 2px #21284f
+	border-bottom:solid 2px #21284f;
 }
 
 #columnteamdescription{
@@ -160,6 +160,18 @@ background-color: white;
 #pictureofteam{
 	padding: 20px;
 	display: inline-block;
+}
+
+#video{
+	padding: 3b0px;
+	display:inline-block;
+}
+
+#intropagetext{
+	float: top;
+	padding:40px;
+	display: inline-block;
+	width:400px;
 }
 /*colors
 dark purple  #d13d82
