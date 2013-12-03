@@ -63,7 +63,7 @@ border-right:solid 2px #21284f;
 border-left:solid 2px #21284f;
 margin:0 auto;
 width:1200px;
-height:710px;
+height:660px;
 color:#21284f;
 
 }
@@ -74,18 +74,13 @@ text-align:center;
 color:white;
 background-color:#21284f;
 font-family:"Courier New";
-padding:18px;
+padding-bottom:8px;
+padding-top: 28px;
 font-size: 40px;
 border-bottom: solid 1px #1f6fbf;
 }
 
-.nav_bar_tag{
-	text-align: center;
-	font-size: 18px;
-	color: #87bef5;
-	background-color: #21284f;
-	padding:10px;
-}
+
 
 .p_tag
 {
@@ -102,6 +97,15 @@ a:active {text-decoration:underline;}  /* selected link */
 #background-color{
 	padding: -10px;
 	background-color: #21284f;
+}
+
+
+.nav_bar_tag{
+	text-align: center;
+	font-size: 18px;
+	color: white;
+	background-color: #21284f;
+	padding:10px;
 }
 
 /*This is the division for the collumns*/
@@ -123,14 +127,14 @@ padding:50px;
 width: 400px; /*Margin for content column. Should be (RightColumnWidth + LeftColumnWidth)*/
 }
 
-#descriptioncolumn{
+.descriptioncolumn{
 border-left:solid 2px #1f6fbf;
 border-right:solid 2px #1f6fbf;
 display:inline-block;
 float: left;
-height:610px;
+height:560px;
 padding:50px;
-width: 396px; /*Width of left column in pixel*/
+width: 386px; /*Width of left column in pixel*/
  /*Set margin to -(LeftColumnWidth + RightColumnWidth)*/
 
 }
@@ -138,13 +142,22 @@ width: 396px; /*Width of left column in pixel*/
 #subcomponentcolumn{
 display:inline-block;
 float: left;
-height:710px;
-width: 200px; /*Width of right column in pixels*/
+height:630px;
+width: 180px; /*Width of right column in pixels*/
  /*Set margin to -RightColumnWidth*/
 background-color: white;
 }
 
-#descriptionbuttons{
+#descriptionbuttons1{
+	text-align: center;
+	width:150px;
+	height:50px;
+	margin:25px;
+	border-bottom:solid 2px #21284f;
+}
+
+
+.descriptionbuttons{
 	text-align: center;
 	width:150px;
 	height:50px;
@@ -154,16 +167,22 @@ background-color: white;
 
 #columnteamdescription{
 	width: 340px; 
-	height:600px;
+	height:540px;
 	display: inline-block;
 }
 #pictureofteam{
-	padding: 20px;
+	/*padding: 20px;*/
 	display: inline-block;
 }
 
+#teammember{
+	width:300px;
+	padding:20px;
+	height:200px;
+}
+
 #video{
-	padding: 3b0px;
+	padding: 35px;
 	display:inline-block;
 }
 
@@ -172,6 +191,15 @@ background-color: white;
 	padding:40px;
 	display: inline-block;
 	width:400px;
+}
+
+#footer_tag{
+padding: 10px;
+text-align: center;
+
+color:#9f7db5;
+background-color:#21284f;
+font-family:"Courier New";
 }
 /*colors
 dark purple  #d13d82

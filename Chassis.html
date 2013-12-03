@@ -38,25 +38,35 @@
 					</div>
 				</div>
 
-				<div id="descriptioncolumn">
+				<div class="descriptioncolumn" id="column">
 					Lorem ipsum lorem impusmLorem ipsum lorem impusmLorem ipsum lorem impusmLorem ipsum lorem impusmLorem ipsum lorem impusmLorem ipsum lorem impusmLorem ipsum lorem impusmLorem ipsum lorem impusmLorem ipsum lorem impusmLorem ipsum lorem impusmLorem ipsum lorem impusmLorem ipsum lorem impusmLorem ipsum lorem impusmLorem ipsum lorem impusmLorem ipsum lorem impusmLorem ipsum lorem impusm
 				</div>
+				
 
 				<div id="subcomponentcolumn">
 					
-					<div id="descriptionbuttons" >
+					<div class="descriptionbuttons" id="firstbutton">
 						Fabrication
 					</div>
-					<div id="descriptionbuttons">
+					<div class="descriptionbuttons">
 						Materials
 					</div>
-					<div id="descriptionbuttons">
+					<div class="descriptionbuttons">
 						Wheels
 					</div>
 				</div>
 
+				<script>
+					$( "div#firstbutton").click(function() {
+					$( "div#column" ).show( "slow" );
+					});
+				</script>				
+
 			</div>
 		</div>
+	<div id="footer_tag">
+		This webpage was designed and coded by Colby Sato, Colbysato.com, Fall 2014 for Principles of Engineering. 
+	</div>	
 	</body>
 
 
