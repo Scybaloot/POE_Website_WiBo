@@ -4,6 +4,9 @@
 	<head>
 		<link rel="stylesheet" type="text/css"  href="poe.css">
 		<title>Chassis</title>
+		 <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+		 <link rel="icon" type="image/vnd.microsoft.icon"
+     href="favicon.ico" />  #icon is not animated
 	</head>
 		<header>
 			<a href=index.html>
@@ -28,6 +31,9 @@
 				
 				<div id="Diagramcolumn">
 					<div>
+						<img id ="robotpicture" src="Robot.png" alt="Wireless Robot">
+					</div>
+					<div>
 						<a href=IRNavigation.html>Learn about IR Navigation</a> 
 					</div>
 					<div>
@@ -38,28 +44,50 @@
 					</div>
 				</div>
 
-				<div class="descriptioncolumn" id="column">
-					Lorem ipsum lorem impusmLorem ipsum lorem impusmLorem ipsum lorem impusmLorem ipsum lorem impusmLorem ipsum lorem impusmLorem ipsum lorem impusmLorem ipsum lorem impusmLorem ipsum lorem impusmLorem ipsum lorem impusmLorem ipsum lorem impusmLorem ipsum lorem impusmLorem ipsum lorem impusmLorem ipsum lorem impusmLorem ipsum lorem impusmLorem ipsum lorem impusmLorem ipsum lorem impusm
+				<div class="descriptioncolumn" id="fabrication">
+					Fabrication Fabrication Fabrication lorem ipsum dinosaur genomes Fabrication Fabrication Fabrication lorem ipsum dinosaur genomes Fabrication Fabrication Fabrication lorem ipsum dinosaur genomes Fabrication Fabrication Fabrication lorem ipsum dinosaur genomes Fabrication Fabrication Fabrication lorem ipsum dinosaur genomes Fabrication Fabrication Fabrication lorem ipsum dinosaur genomes 
 				</div>
 				
+				<div class="descriptioncolumn" id="materials">
+					materials materials materials genomes materials materials materials genomes materials materials materials genomes materials materials materials genomes materials materials materials genomes materials materials materials genomes materials materials materials genomes materials materials materials genomes materials materials materials genomes 
+				</div>
+
+				<div class="descriptioncolumn" id="wheels">
+					Wheels go fast wheels go fast wheels go fast. Wheels go fast wheels go fast wheels go fast. Wheels go fast wheels go fast wheels go fast. Wheels go fast wheels go fast wheels go fast. Wheels go fast wheels go fast wheels go fast. Wheels go fast wheels go fast wheels go fast. 
+				</div>
 
 				<div id="subcomponentcolumn">
 					
-					<div class="descriptionbuttons" id="firstbutton">
+					<div class="descriptionbuttons" id="fabbutton">
 						Fabrication
 					</div>
-					<div class="descriptionbuttons">
+					<div class="descriptionbuttons" id="materialsbutton">
 						Materials
 					</div>
-					<div class="descriptionbuttons">
+					<div class="descriptionbuttons" id="wheelsbutton">
 						Wheels
 					</div>
 				</div>
 
 				<script>
-					$( "div#firstbutton").click(function() {
-					$( "div#column" ).show( "slow" );
+					$( "div#fabbutton").click(function() {
+					$( "div#fabrication" ).show();
+					$( "div#materials" ).hide();
+					$( "div#wheels" ).hide();
 					});
+					$( "div#materialsbutton").click(function() {
+					$( "div#materials" ).show( );
+					$( "div#fabrication" ).hide();
+					$( "div#wheels" ).hide();
+					});
+					$( "div#wheelsbutton").click(function() {
+					$( "div#wheels" ).show();
+					$( "div#fabrication" ).hide();
+					$( "div#materials" ).hide();
+					});
+				
+					$( "div#materials" ).hide();
+					$( "div#wheels" ).hide();
 				</script>				
 
 			</div>

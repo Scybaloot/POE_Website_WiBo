@@ -59,6 +59,7 @@ margin:0;
 
 .body_tag
 {
+font-family: "Ubuntu";
 border-right:solid 2px #21284f;
 border-left:solid 2px #21284f;
 margin:0 auto;
@@ -73,7 +74,7 @@ color:#21284f;
 text-align:center;
 color:white;
 background-color:#21284f;
-font-family:"Courier New";
+font-family:"Ubuntu";
 padding-bottom:8px;
 padding-top: 28px;
 font-size: 40px;
@@ -84,8 +85,9 @@ border-bottom: solid 1px #1f6fbf;
 
 .p_tag
 {
-font-family:"Courier New";
+font-family:"Ubuntu";
 font-size:20px;
+letter-spacing: 2px;
 }
 
 a:link {text-decoration:none;
@@ -104,6 +106,7 @@ a:active {text-decoration:underline;}  /* selected link */
 	text-align: center;
 	font-size: 18px;
 	color: white;
+	font-family: "Ubuntu";
 	background-color: #21284f;
 	padding:10px;
 }
@@ -193,13 +196,17 @@ background-color: white;
 	width:400px;
 }
 
+#robotpicture{
+	width:500px;
+}
+
 #footer_tag{
 padding: 10px;
 text-align: center;
 
 color:#9f7db5;
 background-color:#21284f;
-font-family:"Courier New";
+font-family:"Ubuntu";
 }
 /*colors
 dark purple  #d13d82
