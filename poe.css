@@ -105,10 +105,15 @@ a:active {text-decoration:underline;}  /* selected link */
 .nav_bar_tag{
 	text-align: center;
 	font-size: 18px;
-	color: white;
 	font-family: "Ubuntu";
 	background-color: #21284f;
+	border-right:solid 2px #1f6fbf;
 	padding:10px;
+}
+
+.nav_bar_tag a {
+	color: white;
+
 }
 
 /*This is the division for the collumns*/
@@ -168,17 +173,17 @@ background-color: white;
 	border-bottom:solid 2px #21284f;
 }
 
-#columnteamdescription{
+.columnteamdescription{
 	width: 340px; 
-	height:540px;
+	height:690px;
 	display: inline-block;
 }
-#pictureofteam{
+.pictureofteam{
 	/*padding: 20px;*/
 	display: inline-block;
 }
 
-#teammember{
+.teammember{
 	width:300px;
 	padding:20px;
 	height:200px;
