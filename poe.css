@@ -146,7 +146,7 @@ width: 386px; /*Width of left column in pixel*/
 display:inline-block;
 float: left;
 height:630px;
-width: 180px; /*Width of right column in pixels*/
+width: 210px; /*Width of right column in pixels*/
  /*Set margin to -RightColumnWidth*/
 background-color: white;
 }
