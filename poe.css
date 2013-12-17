@@ -3,6 +3,8 @@
    License: none (public domain)
 */
 
+@import url(http://fonts.googleapis.com/css?family=Carrois+Gothic);
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -51,6 +53,10 @@ table {
 
 /*----------------my stuff below------------------*/
 
+html{
+font-family: 'Carrois Gothic', sans-serif;
+}
+
 header, header a
 {
 padding:0;
@@ -59,7 +65,7 @@ margin:0;
 
 .body_tag
 {
-font-family: "Ubuntu";
+font-family: 'Carrois Gothic', sans-serif;
 border-right:solid 2px #21284f;
 border-left:solid 2px #21284f;
 margin:0 auto;
@@ -74,7 +80,6 @@ color:#21284f;
 text-align:center;
 color:white;
 background-color:#21284f;
-font-family:"Ubuntu";
 padding-bottom:8px;
 padding-top: 28px;
 font-size: 40px;
@@ -85,7 +90,6 @@ border-bottom: solid 1px #1f6fbf;
 
 .p_tag
 {
-font-family:"Ubuntu";
 font-size:20px;
 letter-spacing: 2px;
 }
@@ -105,7 +109,6 @@ a:active {text-decoration:underline;}  /* selected link */
 .nav_bar_tag{
 	text-align: center;
 	font-size: 18px;
-	font-family: "Ubuntu";
 	background-color: #21284f;
 	border-right:solid 2px #1f6fbf;
 	padding:10px;
@@ -214,7 +217,6 @@ text-align: center;
 
 color:#9f7db5;
 background-color:#21284f;
-font-family:"Ubuntu";
 }
 /*colors
 dark purple  #d13d82
