@@ -29,100 +29,21 @@
 
 		<div class="body_tag">
 			<div id="maincontainer" >
-				
-				<div id="Diagramcolumn">
-					<div>
-						<img id="robotpicture" src="Robot.png" alt="Wireless Robot">
-					</div>
-
-					<div>
-						<a href=IRNavigation.html>Learn about IR Navigation</a> 
-					</div>
-					<div>
-						<a href=Chassis.html>Learn about Chassis</a> 
-					</div>
-					<div>
-						<a href=WirelessCharging.html>Learn about WirelessCharging</a>
-					</div>
+				<div id="Overviewnavigation" >	
+					The robot navigates by sensing of infrared light from a beacon at the charging station. The IR phototransistor has maximum sensitivity at 950 nm, and the IR LEDs emit light at 960 nm, so this pairing has a range of ______.	
 				</div>
 
-				<div class="descriptioncolumn" >
-					<div id="Overviewnavigation" >	
-						The robot navigates by sensing of infrared light from a beacon at the charging station. The IR phototransistor has maximum sensitivity at 950 nm, and the IR LEDs emit light at 960 nm, so this pairing has a range of ______.	
-					</div>
-
-					<div id="Beacon" >
-						The Beacon is a cluster of 8 LEDs that emit light at 940nm, at the low-frequency range of the IR spectrum to avoid interference with visible light from indoor lighting.	
-					</div>
-
-					<div id="Receiver" >
-						The IR Receiver is the Vishay TSOP 383432. This sensor has peaks in the 940nm range, pairing it very well with the IR LEDs used in the beacon. This system has a range of x___ meters.
-					</div>
-
-					<div id="Programming" >
-						The Robot responds to the IR sensors and adjusts such that the sensors are receiveing the same amount of light, then go forward until another button pushes up against the charging station. 
-						
-					</div>
-				</div>	
-				<div id="subcomponentcolumn">
-
-					<div id="Overviewnavigation_button">
-						<div class="descriptionbuttons" >
-							Overview of Navigation
-						</div>
-					</div>
-
-					<div id="Beacon_button">
-						<div class="descriptionbuttons">
-							Beacon		
-						</div id="Receiver_button">
-					</div id="Receiver_button">
-
-					<div id="Receiver_button">
-						<div class="descriptionbuttons" >
-							Receiver
-						</div >
-					</div>
-
-					<div id="Programming_button">
-						<div class="descriptionbuttons" >
-							Programming
-						</div>
-					</div>
-
+				<div id="Beacon" >
+					The Beacon is a cluster of 8 LEDs that emit light at 940nm, at the low-frequency range of the IR spectrum to avoid interference with visible light from indoor lighting.	
 				</div>
 
-				<script>
-					$( "div#Overviewnavigation_button").click(function() {
-					$( "div#Overviewnavigation" ).show();
-					$( "div#Beacon" ).hide();
-					$( "div#Receiver" ).hide();
-					$( "div#Programming" ).hide();
-					});
-								
-					$( "div#Beacon_button").click(function() {
-					$( "div#Overviewnavigation" ).hide();
-					$( "div#Beacon" ).show();
-					$( "div#Receiver" ).hide();
-					$( "div#Programming" ).hide();
-					});
-					$( "div#Receiver_button").click(function() {
-					$( "div#Overviewnavigation" ).hide();
-					$( "div#Beacon" ).hide();
-					$( "div#Receiver" ).show();
-					$( "div#Programming" ).hide();
-					});
-					$( "div#Programming_button").click(function() {
-					$( "div#Overviewnavigation" ).hide();
-					$( "div#Beacon" ).hide();
-					$( "div#Receiver" ).hide();
-					$( "div#Programming" ).show();
-					});	
+				<div id="Receiver" >
+					The IR Receiver is the Vishay TSOP 383432. This sensor has peaks in the 940nm range, pairing it very well with the IR LEDs used in the beacon. This system has a range of x___ meters.
+				</div>
 
-					$( "div#Beacon" ).hide();
-					$( "div#Receiver" ).hide();
-					$( "div#Programming" ).hide();
-				</script>				
+				<div id="Programming" >
+					The Robot responds to the IR sensors and adjusts such that the sensors are receiveing the same amount of light, then go forward until another button pushes up against the charging station. 
+				</div>
 
 			</div>
 		</div>
