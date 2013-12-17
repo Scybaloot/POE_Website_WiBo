@@ -70,7 +70,7 @@ border-right:solid 2px #21284f;
 border-left:solid 2px #21284f;
 margin:0 auto;
 width:1200px;
-height:660px;
+/*height:660px;*/
 color:#21284f;
 
 }
@@ -125,6 +125,7 @@ a:active {text-decoration:underline;}  /* selected link */
 width: 800px; /*Width of main container*/
 margin: 0 auto; /*Center container on page*/
 padding-top: 20px;
+padding-bottom: 20px;
 }
 
 /*
