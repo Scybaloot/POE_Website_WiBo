@@ -203,9 +203,26 @@ background-color: white;
 	height:200px;
 }
 
-#video{
+.video{
 	padding: 35px;
 	display:inline-block;
+	text-align: center;
+}
+
+.video div{
+	width: 500px;
+	margin: 0 auto;
+}
+
+.figure{
+	padding: 35px;
+	display:inline-block;
+	text-align: center;
+}
+
+.figure div{
+	width: 500px;
+	margin: 0 auto;
 }
 
 #intropagetext{
