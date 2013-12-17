@@ -29,25 +29,19 @@
 
 		<div class="body_tag">
 			<div id="maincontainer" >
+				<div>
+				Our plan for IR navigation was to put 10 IR LEDs in a ring around the charging station and two IR receivers on the robot. Depending on which IR receiver was seeing more IR light, the robot would either go left, right or straight until it drove over the station, engaging a mechanical stop that would cut off power to the Arduino. 
+				</div>
+
+				<div>
+				Unfortunately, we were not able to completely implement IR Navigation. Initial testing showed promise, but we now know that the tests were not robust enough to reveal some of the problems that we later ran into. We realized too late that the IR receivers we had purchased were not suited to our needs and would not give us the kind of information necessary for IR location sensing. We tried to replace the IR receivers by using two of the IR LEDs as photodiodes. This did not provide clean enough data, however, and in the end we were not able to tune the system to work successfully. 
+				</div>
+
 				<div id="video">
 					<iframe class="youtube-player" type="text/html" width="640" height="385" src="http://www.youtube.com/embed/ffdL3PIPq3Q" allowfullscreen frameborder="0">
 					</iframe>
 				</div>
-				<div id="Overviewnavigation" >	
-					The robot navigates by sensing of infrared light from a beacon at the charging station. The IR phototransistor has maximum sensitivity at 950 nm, and the IR LEDs emit light at 960 nm, so this pairing has a range of ______.	
-				</div>
 
-				<div id="Beacon" >
-					The Beacon is a cluster of 8 LEDs that emit light at 940nm, at the low-frequency range of the IR spectrum to avoid interference with visible light from indoor lighting.	
-				</div>
-
-				<div id="Receiver" >
-					The IR Receiver is the Vishay TSOP 383432. This sensor has peaks in the 940nm range, pairing it very well with the IR LEDs used in the beacon. This system has a range of x___ meters.
-				</div>
-
-				<div id="Programming" >
-					The Robot responds to the IR sensors and adjusts such that the sensors are receiveing the same amount of light, then go forward until another button pushes up against the charging station. 
-				</div>
 
 			</div>
 		</div>
