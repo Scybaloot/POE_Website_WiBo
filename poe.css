@@ -136,8 +136,8 @@ width: 400px; /*Margin for content column. Should be (RightColumnWidth + LeftCol
 }
 
 .descriptioncolumn{
-border-left:solid 2px #1f6fbf;
-border-right:solid 2px #1f6fbf;
+border-left:solid 2px #21284f;
+border-right:solid 2px #21284f;
 display:inline-block;
 float: left;
 height:560px;
@@ -175,7 +175,7 @@ background-color: white;
 
 .columnteamdescription{
 	width: 340px; 
-	height:690px;
+	height:540px;
 	display: inline-block;
 }
 .pictureofteam{
