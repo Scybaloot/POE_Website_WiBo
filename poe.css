@@ -205,7 +205,7 @@ background-color: white;
 
 .video{
 	padding: 35px;
-	display:inline-block;
+	display:block;
 	text-align: center;
 }
 
@@ -216,12 +216,16 @@ background-color: white;
 
 .figure{
 	padding: 35px;
-	display:inline-block;
+	display:block;
 	text-align: center;
 }
 
 .figure div{
 	width: 500px;
+	margin: 0 auto;
+}
+
+.figure img{
 	margin: 0 auto;
 }
 

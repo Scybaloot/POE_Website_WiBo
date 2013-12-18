@@ -29,28 +29,31 @@
 			<div id="maincontainer">
 
 					<div>
-					The original plan for the wireless charger was to build it from scratch, experimenting with configurations to maximize efficiency. Transmitter and receiver coils were custom selected and purchased. The final result of the development can be viewed in this video.
+					The original plan for the wireless transceiver was to build it from scratch, experimenting with configurations to maximize efficiency. The in-house transceiver ultimately did not deliver an acceptable amount of power to a USB charger. As a back-up plan, a transceiver was purchased and used.
 					</div>
 
 
 					<div class="video">
 					<iframe width="560" height="315" src="//www.youtube.com/embed/JzZQ_zx9SWg" frameborder="0" allowfullscreen></iframe>
-					<div>Wireless charging using a transceiver from Adafruit. The received power is boosted to 5V for USB battery.</div>
+					<div>Wireless charging using a <a href="http://www.adafruit.com/blog/2013/06/14/new-product-inductive-charging-set-5v-500ma-max/">transceiver from Adafruit</a>. The received power is boosted to 5V for USB battery.</div>
 					</div>
 
 					<div>
-					Power is transmitted from the charging station to the robot using wireless inductive charging. A coil on the charging station is inductively coupled with a coil on the robot. Power is transferred when the transmitter is given a square wave. The AC current inside the transmitter produces an oscillating magnetic field. This magnetic field induces AC current in the receiver coil.
+					Power is transmitted from the charging station to the robot using wireless inductive transfer. When the transmitter coil is aligned and within working distance of the receiver coil, the system is inductively coupled. Power is transferred when the transmitter is given a square wave. The AC current inside the transmitter produces an oscillating magnetic field. This magnetic field travels through space, inducing AC current in the receiver coil.
 					</div>
 
+					<div class="figure">
 					<img src="images/Transmitter.PNG" alt="System block diagram">
+					<div>Transmitter schematic. An H-bridge receives an adjustable supply voltage from a DC regulator, and timing signals from a 555 timer.</div>
+					</div>
 
 					<div>
-					An H-bridge was used to produce the driving signal. The H-bridge received four timing signals, which were square waves identical in amplitude and frequency, each offset by 90 degrees in phase. In the development phase, these timing signals came from a function generator in combination with a hex inverter. The LCR circuit powered by the power inverter was tuned so that the transmitter resonant frequency was matched to that of the receiver LCR circuit, in order to minimize losses.
+					An H-bridge was used to produce the driving signal. The H-bridge received four timing signals, which were square waves identical in amplitude and frequency, each offset by 90 degrees in phase. In the development phase, these timing signals came from a function generator, whose two outputs could be adjusted so that  The LCR circuit powered by the power inverter was tuned so that the transmitter resonant frequency was matched to that of the receiver LCR circuit, in order to minimize losses.
 					</div>
 
 					<div class="figure">
 					<img src="images/Receiver.png" alt="System block diagram">
-					<div>An early prototype of the wireless charger demonstrating how the recevied power can be rectified and filtered into a DC voltage using a full-bridge rectifier and capacitor.</div>
+					<div>Receiver schematic. The received AC is rectified and boosted into the battery pack. A mechanical switch separates the load from the batteries when the robot is docked.</div>
 					</div>
 
 					<div>
