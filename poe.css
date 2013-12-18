@@ -85,7 +85,7 @@ color:white;
 background-color:#21284f;
 padding-bottom:8px;
 padding-top: 28px;
-font-size: 40px;
+font-size: 60px;
 border-bottom: solid 1px #1f6fbf;
 }
 
@@ -117,9 +117,25 @@ a:active {text-decoration:underline;}  /* selected link */
 	padding:10px;
 }
 
+.image_tag {
+	margin-left:250px;
+	margin-right:auto;
+	width:20em ;
+	text-align: center;
+}
+
 .nav_bar_tag a {
 	color: white;
+}
 
+.section_head {
+	font-size: 34px;
+	font-weight: bold;
+}
+
+.subsection_head {
+	font-weight:bold;
+	font-size: 20px;
 }
 
 /*This is the division for the collumns*/
@@ -129,6 +145,7 @@ width: 800px; /*Width of main container*/
 margin: 0 auto; /*Center container on page*/
 padding-top: 20px;
 padding-bottom: 20px;
+font-size: 18px;
 }
 
 #maincontainer div {
@@ -204,7 +221,7 @@ background-color: white;
 }
 
 .video{
-	padding: 35px;
+	padding: 40px;
 	display:inline-block;
 	text-align: center;
 }

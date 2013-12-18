@@ -27,16 +27,19 @@
 
 		<div class="body_tag">
 			<div id="maincontainer">
-
+					<div class="section_head">
+					Wireless Charging				
+					</div>
 					<div>
-					The original plan for the wireless charger was to build it from scratch, experimenting with configurations to maximize efficiency. Transmitter and receiver coils were custom selected and purchased. The final result of the development can be viewed in this video.
+					The original plan for the wireless charger was to build it from scratch, experimenting with configurations to maximize efficiency. Transmitter and receiver coils were custom selected and purchased. The final result of the development can be viewed in video 1 below.
 					</div>
 
 
 					<div class="video">
-					<iframe width="560" height="315" src="//www.youtube.com/embed/JzZQ_zx9SWg" frameborder="0" allowfullscreen></iframe>
-					<div>Wireless charging using a transceiver from Adafruit. The received power is boosted to 5V for USB battery.</div>
+					<iframe class ="youtube-player" width="640" height="385" type="text/html" src="http://www.youtube.com/embed/JzZQ_zx9SWg" frameborder="0" allowfullscreen></iframe>
+					<div>Video 1. Wireless charging using a transceiver from Adafruit. The received power is boosted to 5V for USB battery.</div>
 					</div>
+
 
 					<div>
 					Power is transmitted from the charging station to the robot using wireless inductive charging. A coil on the charging station is inductively coupled with a coil on the robot. Power is transferred when the transmitter is given a square wave. The AC current inside the transmitter produces an oscillating magnetic field. This magnetic field induces AC current in the receiver coil.
@@ -54,12 +57,12 @@
 					</div>
 
 					<div>
-					On the robot, a voltage is induced in the receiving coil because of the oscillating magnetic field from the transmitter coil. The receiving LCR circuit was also tuned to ensure that the resonant frequencies were matched. Because the output of the receiver coil is AC, the output is rectified and filtered into DC power, which is fed into a boost converter, and then a USB battery charger.
+					On the robot, a voltage is induced in the receiving coil because of the oscillating magnetic field from the transmitter coil. The receiving LCR circuit was also tuned to ensure that the resonant frequencies were matched. Because the output of the receiver coil is AC, the output is rectified and filtered into DC power, which is fed into a boost converter, and then a USB battery charger. This can be seen in video 2 below. 
 					</div>
 
 					<div class="video">
-					<iframe width="560" height="315" src="//www.youtube.com/embed/0jdQdx_DZp0" frameborder="0" allowfullscreen></iframe>
-					<div>An early prototype of the wireless charger demonstrating how the recevied power can be rectified and filtered into a DC voltage using a full-bridge rectifier and capacitor.</div>
+					<iframe width="640" height="385" type="text/html" src="//www.youtube.com/embed/0jdQdx_DZp0" frameborder="0" allowfullscreen></iframe>
+					<div>Video 2. An early prototype of the wireless charger demonstrating how the recevied power can be rectified and filtered into a DC voltage using a full-bridge rectifier and capacitor.</div>
 					</div>
 
 					<div>
