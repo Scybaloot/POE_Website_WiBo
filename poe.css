@@ -1,6 +1,6 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
 */
 
 @import url(http://fonts.googleapis.com/css?family=Carrois+Gothic);
@@ -14,39 +14,39 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;  
+        display: block;
 }
 body {
-	line-height: 1;
+        line-height: 1;
 }
 ol, ul {
-	list-style: none;
+        list-style: none;
 }
 blockquote, q {
-	quotes: none;
+        quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+        content: '';
+        content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+        border-collapse: collapse;
+        border-spacing: 0;
 }
 
 
@@ -85,7 +85,7 @@ color:white;
 background-color:#21284f;
 padding-bottom:8px;
 padding-top: 28px;
-font-size: 40px;
+font-size: 60px;
 border-bottom: solid 1px #1f6fbf;
 }
 
@@ -98,28 +98,44 @@ letter-spacing: 2px;
 }
 
 a:link {text-decoration:none;
-	color:white;}    /* unvisited link */
+        color:white;} /* unvisited link */
 a:visited {text-decoration:none;} /* visited link */
-a:hover {text-decoration:underline;}   /* mouse over link */
-a:active {text-decoration:underline;}  /* selected link */
+a:hover {text-decoration:underline;} /* mouse over link */
+a:active {text-decoration:underline;} /* selected link */
 
 #background-color{
-	padding: -10px;
-	background-color: #21284f;
+        padding: -10px;
+        background-color: #21284f;
 }
 
 
 .nav_bar_tag{
-	text-align: center;
-	font-size: 18px;
-	background-color: #21284f;
-	border-right:solid 2px #1f6fbf;
-	padding:10px;
+        text-align: center;
+        font-size: 18px;
+        background-color: #21284f;
+        border-right:solid 2px #1f6fbf;
+        padding:10px;
+}
+
+.image_tag {
+        margin-left:250px;
+        margin-right:auto;
+        width:20em ;
+        text-align: center;
 }
 
 .nav_bar_tag a {
-	color: white;
+        color: white;
+}
 
+.section_head {
+        font-size: 34px;
+        font-weight: bold;
+}
+
+.subsection_head {
+        font-weight:bold;
+        font-size: 20px;
 }
 
 /*This is the division for the collumns*/
@@ -129,10 +145,11 @@ width: 800px; /*Width of main container*/
 margin: 0 auto; /*Center container on page*/
 padding-top: 20px;
 padding-bottom: 20px;
+font-size: 18px;
 }
 
 #maincontainer div {
-	margin-top: 10px;
+        margin-top: 10px;
 }
 
 /*
@@ -171,69 +188,69 @@ background-color: white;
 }
 
 #descriptionbuttons1{
-	text-align: center;
-	width:150px;
-	height:50px;
-	margin:25px;
-	border-bottom:solid 2px #21284f;
+        text-align: center;
+        width:150px;
+        height:50px;
+        margin:25px;
+        border-bottom:solid 2px #21284f;
 }
 
 
 .descriptionbuttons{
-	text-align: center;
-	width:150px;
-	height:50px;
-	margin:25px;
-	border-bottom:solid 2px #21284f;
+        text-align: center;
+        width:150px;
+        height:50px;
+        margin:25px;
+        border-bottom:solid 2px #21284f;
 }
 
 .columnteamdescription{
-	width: 340px; 
-	height:540px;
-	display: inline-block;
+        width: 340px;
+        height:540px;
+        display: inline-block;
 }
 .pictureofteam{
-	/*padding: 20px;*/
-	display: inline-block;
+        /*padding: 20px;*/
+        display: inline-block;
 }
 
 .teammember{
-	width:300px;
-	padding:20px;
-	height:200px;
+        width:300px;
+        padding:20px;
+        height:200px;
 }
 
 .video{
-	padding: 35px;
-	display:inline-block;
-	text-align: center;
+        padding: 40px;
+        display:inline-block;
+        text-align: center;
 }
 
 .video div{
-	width: 500px;
-	margin: 0 auto;
+        width: 500px;
+        margin: 0 auto;
 }
 
 .figure{
-	padding: 35px;
-	display:inline-block;
-	text-align: center;
+        padding: 35px;
+        display:inline-block;
+        text-align: center;
 }
 
 .figure div{
-	width: 500px;
-	margin: 0 auto;
+        width: 500px;
+        margin: 0 auto;
 }
 
 #intropagetext{
-	float: top;
-	padding:40px;
-	display: inline-block;
-	width:400px;
+        float: top;
+        padding:40px;
+        display: inline-block;
+        width:400px;
 }
 
 #robotpicture{
-	width:500px;
+        width:500px;
 }
 
 #footer_tag{
@@ -244,11 +261,11 @@ color:#9f7db5;
 background-color:#21284f;
 }
 /*colors
-dark purple  #d13d82
+dark purple #d13d82
 light purple #9f7db5
-dark blue    #21284f
-sorta dark blue  #253387
-medium blue  #1f6fbf
-light blue   #87bef5
+dark blue #21284f
+sorta dark blue #253387
+medium blue #1f6fbf
+light blue #87bef5
 
 */
