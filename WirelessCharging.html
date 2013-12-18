@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css"  href="poe.css">
+		<title>Wireless Charging</title>
+		 <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+	</head>
+		<header>
+			<a href=index.html>
+			<div class="mainhead_tag" target="_blank" >
+				<h1>WiBo, The Wireless Robot</h1> <!--The title -->
+			</div>	
+			</a>
+		</header>
+
+	<body>
+		
+	<nav class="nav_bar_tag">
+		<a href="index.html">Project Overview</a> |
+  		<a href="WirelessCharging.html">Wireless Charging</a> |
+  		<a href="Chassis.html">Chassis Design</a> |
+  		<a href="IRNavigation.html">IR Navigation</a> |
+  		<a href="Reflection.html">Reflection</a> 
+	</nav>
+
+
+		<div class="body_tag">
+			<div id="maincontainer">
+					<div class="section_head">
+					Wireless Charging				
+					</div>
+					<div>
+					The original plan for the wireless charger was to build it from scratch, experimenting with configurations to maximize efficiency. Transmitter and receiver coils were custom selected and purchased. The final result of the development can be viewed in video 1 below.
+					</div>
+
+
+					<div class="video">
+					<iframe class ="youtube-player" width="640" height="385" type="text/html" src="http://www.youtube.com/embed/JzZQ_zx9SWg" frameborder="0" allowfullscreen></iframe>
+					<div>Video 1. Wireless charging using a transceiver from Adafruit. The received power is boosted to 5V for USB battery.</div>
+					</div>
+
+
+					<div>
+					Power is transmitted from the charging station to the robot using wireless inductive charging. A coil on the charging station is inductively coupled with a coil on the robot. Power is transferred when the transmitter is given a square wave. The AC current inside the transmitter produces an oscillating magnetic field. This magnetic field induces AC current in the receiver coil.
+					</div>
+
+					<img src="images/Transmitter.PNG" alt="System block diagram">
+
+					<div>
+					An H-bridge was used to produce the driving signal. The H-bridge received four timing signals, which were square waves identical in amplitude and frequency, each offset by 90 degrees in phase. In the development phase, these timing signals came from a function generator in combination with a hex inverter. The LCR circuit powered by the power inverter was tuned so that the transmitter resonant frequency was matched to that of the receiver LCR circuit, in order to minimize losses.
+					</div>
+
+					<div class="figure">
+					<img src="images/Receiver.png" alt="System block diagram">
+					<div>An early prototype of the wireless charger demonstrating how the recevied power can be rectified and filtered into a DC voltage using a full-bridge rectifier and capacitor.</div>
+					</div>
+
+					<div>
+					On the robot, a voltage is induced in the receiving coil because of the oscillating magnetic field from the transmitter coil. The receiving LCR circuit was also tuned to ensure that the resonant frequencies were matched. Because the output of the receiver coil is AC, the output is rectified and filtered into DC power, which is fed into a boost converter, and then a USB battery charger. This can be seen in video 2 below. 
+					</div>
+
+					<div class="video">
+					<iframe width="640" height="385" type="text/html" src="//www.youtube.com/embed/0jdQdx_DZp0" frameborder="0" allowfullscreen></iframe>
+					<div>Video 2. An early prototype of the wireless charger demonstrating how the recevied power can be rectified and filtered into a DC voltage using a full-bridge rectifier and capacitor.</div>
+					</div>
+
+					<div>
+					In order to prevent the Arduino from trying to draw power from the batteries while they are being charged, we attached a button to the bottom of the robot and connected it to the gate of a p-channel MOSFET. The MOSFET is connected between the battery pack and the boost converter that powers the Arduino. When the robot docks, the button is pressed and a voltage is applied to the gate of the MOSFET, cutting off the connection between the batteries and the Arduino.
+					</div>
+
+				</div>
+			</div>
+		</div>
+	<div id="footer_tag">
+		This webpage was designed and coded by Colby Sato, Colbysato.com, Fall 2014 for Principles of Engineering. 
+	</div>
+	</body>
+
+
+<<<<<<< HEAD
+</html>
+=======
+</html>
+>>>>>>> c67512304033d4ac4a76e128e16a39526bad3738
