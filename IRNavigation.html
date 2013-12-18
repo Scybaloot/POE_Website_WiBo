@@ -1,55 +1,84 @@
 <!DOCTYPE html>
 
 <html>
-	<head>
-		<link rel="stylesheet" type="text/css"  href="poe.css">
-		<title>IR Navigation</title>
-		<script src="http://code.jquery.com/jquery-1.10.2.js">
-		</script>
-	</head>
-		<header>
-			<a href=index.html>
-			<div class="mainhead_tag" target="_blank" >
-				<h1>WiBo, The Wireless Robot</h1> <!--The title -->
-			</div>	
-			</a>
-		</header>
+        <head>
+                <link rel="stylesheet" type="text/css" href="poe.css">
+                <title>IR Navigation</title>
+                <script src="http://code.jquery.com/jquery-1.10.2.js">
+                </script>
+        </head>
+                <header>
+                        <a href=index.html>
+                        <div class="mainhead_tag" target="_blank" >
+                                <h1>WiBo, The Wireless Robot</h1> <!--The title -->
+                        </div>        
+                        </a>
+                </header>
 
-	<body>
-		
-	<nav class="nav_bar_tag">
-		<a href="index.html">Project Overview</a> |
-  		<a href="WirelessCharging.html">Wireless Charging</a> |
-  		<a href="Chassis.html">Chassis Design</a> |
-  		<a href="IRNavigation.html">IR Navigation</a> |
-  		<a href="Reflection.html">Reflection</a> 
-	</nav>
-
-
-		<div class="body_tag">
-			<div id="maincontainer">
-				<img src="images/OverviewStationIR.jpg" alt="System block diagram" width="300px" />
-				<div>
-				Our plan for IR navigation was to put 10 IR LEDs in a ring around the charging station and two IR receivers on the robot. Depending on which IR receiver was seeing more IR light, the robot would either go left, right or straight until it drove over the station, engaging a mechanical stop that would cut off power to the Arduino. 
-				</div>
-
-				<div>
-				Unfortunately, we were not able to completely implement IR Navigation. Initial testing showed promise, but we now know that the tests were not robust enough to reveal some of the problems that we later ran into. We realized too late that the IR receivers we had purchased were not suited to our needs and would not give us the kind of information necessary for IR location sensing. We tried to replace the IR receivers by using two of the IR LEDs as photodiodes. This did not provide clean enough data, however, and in the end we were not able to tune the system to work successfully. 
-				</div>
-
-				<div id="video">
-					<iframe class="youtube-player" type="text/html" width="640" height="385" src="http://www.youtube.com/embed/ffdL3PIPq3Q" allowfullscreen frameborder="0">
-					</iframe>
-				</div>
+        <body>
+                
+        <nav class="nav_bar_tag">
+                <a href="index.html">Project Overview</a> |
+                  <a href="WirelessCharging.html">Wireless Charging</a> |
+                  <a href="Chassis.html">Chassis Design</a> |
+                  <a href="IRNavigation.html">IR Navigation</a> |
+                  <a href="Reflection.html">Reflection</a>
+        </nav>
 
 
-			</div>
-		</div>
-	<div id="footer_tag">
-		This webpage was designed and coded by Colby Sato, Colbysato.com, Fall 2014 for Principles of Engineering. 
-	</div>
+                <div class="body_tag">
+                        <div id="maincontainer">
+                                <div>
+                                        <div class="section_head">
+                                        Infrared Navigation                                        
+                                        </div>
 
-	</body>
+                                        <div class="subsection_head">
+                                                Goal
+                                        </div>
+                                        <div>
+                                                As a docking robot, one major requirement was the robot be able to locate the charging station from a meter away and align its coils with the coils on the charchign station.
+                                        </div>
+
+                                        <img src="images/sensors.jpg" class="image_tag" alt="System block diagram" width="300px" />
+                                        <div>
+                                                Figure 1. The IR Navigation Sensors. The IR transceivers are on the two side holes, and the push button is in the middle.
+                                        <div>
+                                        <div class="subsection_head">
+                                                System Design
+                                        </div>
+                                        <div>
+                                        Our plan for IR navigation was to put 10 IR LEDs in a ring around the charging station and two IR receivers on the robot. Depending on which IR receiver was seeing more IR light, the robot would either turn left, turn right or drive straight. When the robot drives into the charging platform, a button(as seen in figure 1 between the IR transceivers) pressed. When this button is pressed, the robot stops driving forward and switches to charging mode.
+                                        </div>
+
+                                        <img src="images/OverviewStationIR.jpg" class="image_tag" alt="Picture of Sensors" width="300px" />
+                                        <div>
+                                                Figure 2. The IR beacon lights attached in a circle on the edge of the charging station. LEDs are arranged around the edge so that the robot can see the charging station from all directions.
+                                        <div>
+
+                                        <div>
+                                                Initial tests were successful at getting motors to respond to differences in ambient light exposure, and this was exciting to see. However, calibrating and filtering the sensors to see infrared light from infrared LEDs proved to be much more challenging.
+                                        </div>
+
+                                        <div class="video">
+                                                <iframe class="youtube-player" type="text/html" width="640" height="385" src="http://www.youtube.com/embed/ffdL3PIPq3Q" allowfullscreen frameborder="0">
+                                                </iframe>
+                                        </div>
+
+                                        Unfortunately, we were not able to completely implement IR Navigation. Initial testing showed promise, but we now know that the tests were not robust enough to reveal some of the problems that we later ran into. We realized too late that the IR receivers we had purchased were not suited to our needs and would not give us the kind of information necessary for IR location sensing. We tried to replace the IR receivers by using two of the IR LEDs as photodiodes. This did not provide clean enough data, so in the end the robot could not locate the beacon and dock at the charging station.
+                                        </div>
+
+                                        
+                                </div>
+
+
+                        </div>
+                </div>
+        <div id="footer_tag">
+                This webpage was designed and coded by Colby Sato, Colbysato.com, Fall 2014 for Principles of Engineering.
+        </div>
+
+        </body>
 
 
 </html>
