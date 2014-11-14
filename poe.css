@@ -283,7 +283,9 @@ background-color: white;
 }
 
 #footer_tag{
-padding: 10px;
+width:100%;
+margin:0%;
+padding: 0px;
 text-align: center;
 position: absolute;
 bottom:0;
