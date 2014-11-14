@@ -38,16 +38,19 @@
 
 					<div class="video">
 					<iframe class ="youtube-player" width="800" height="481" type="text/html" src="http://www.youtube.com/embed/JzZQ_zx9SWg" frameborder="0" allowfullscreen></iframe>
-					<div>Video 1. Wireless charging using a transceiver from Adafruit. The received power is boosted to 5V for USB battery.</div>
 					</div>
+					<div>Video 1. Wireless charging using a transceiver from Adafruit. The received power is boosted to 5V for USB battery.</div>
+					
 
 
 					<div>
 					Power is transmitted from the charging station to the robot using wireless inductive charging. A coil on the charging station is inductively coupled with a coil on the robot. Power is transferred when the transmitter is given a square wave. The AC current inside the transmitter produces an oscillating magnetic field. This magnetic field induces AC current in the receiver coil.
 					</div>
-
+					
+					<div align="center">
 					<img src="images/Transmitter.PNG" alt="System block diagram">
-
+					</div>
+	
 					<div>
 					An H-bridge was used to produce the driving signal. The H-bridge received four timing signals, which were square waves identical in amplitude and frequency, each offset by 90 degrees in phase. In the development phase, these timing signals came from a function generator in combination with a hex inverter. The LCR circuit powered by the power inverter was tuned so that the transmitter resonant frequency was matched to that of the receiver LCR circuit, in order to minimize losses.
 					</div>
@@ -63,8 +66,9 @@
 
 					<div class="video">
 					<iframe width="800" height="481" type="text/html" src="//www.youtube.com/embed/0jdQdx_DZp0" frameborder="0" allowfullscreen></iframe>
-					<div>Video 2. An early prototype of the wireless charger demonstrating how the recevied power can be rectified and filtered into a DC voltage using a full-bridge rectifier and capacitor.</div>
 					</div>
+					<div>Video 2. An early prototype of the wireless charger demonstrating how the recevied power can be rectified and filtered into a DC voltage using a full-bridge rectifier and capacitor.</div>
+					
 
 					<div>
 					In order to prevent the Arduino from trying to draw power from the batteries while they are being charged, we attached a button to the bottom of the robot and connected it to the gate of a p-channel MOSFET. The MOSFET is connected between the battery pack and the boost converter that powers the Arduino. When the robot docks, the button is pressed and a voltage is applied to the gate of the MOSFET, cutting off the connection between the batteries and the Arduino.
