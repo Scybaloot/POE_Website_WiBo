@@ -35,12 +35,12 @@
 					The original plan for the wireless charger was to build it from scratch, experimenting with configurations to maximize efficiency. Transmitter and receiver coils were custom selected and purchased. The final result of the development can be viewed in video 1 below.
 					</div>
 
-
+					<br>
 					<div class="video">
 					<iframe class ="youtube-player" width="800" height="481" type="text/html" src="http://www.youtube.com/embed/JzZQ_zx9SWg" frameborder="0" allowfullscreen></iframe>
 					</div>
 					<div> <p>Video 1. Wireless charging using a transceiver from Adafruit. The received power is boosted to 5V for USB battery.</p></div>
-					
+					<br>
 
 
 					<div>
@@ -63,12 +63,13 @@
 					<div>
 					On the robot, a voltage is induced in the receiving coil because of the oscillating magnetic field from the transmitter coil. The receiving LCR circuit was also tuned to ensure that the resonant frequencies were matched. Because the output of the receiver coil is AC, the output is rectified and filtered into DC power, which is fed into a boost converter, and then a USB battery charger. This can be seen in video 2 below. 
 					</div>
-
+					
+					<br>
 					<div class="video">
 					<iframe width="800" height="481" type="text/html" src="//www.youtube.com/embed/0jdQdx_DZp0" frameborder="0" allowfullscreen></iframe>
 					</div>
 					<div>Video 2. An early prototype of the wireless charger demonstrating how the recevied power can be rectified and filtered into a DC voltage using a full-bridge rectifier and capacitor.</div>
-					
+					</br>
 
 					<div>
 					In order to prevent the Arduino from trying to draw power from the batteries while they are being charged, we attached a button to the bottom of the robot and connected it to the gate of a p-channel MOSFET. The MOSFET is connected between the battery pack and the boost converter that powers the Arduino. When the robot docks, the button is pressed and a voltage is applied to the gate of the MOSFET, cutting off the connection between the batteries and the Arduino.
