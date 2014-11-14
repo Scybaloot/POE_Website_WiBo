@@ -284,11 +284,11 @@ background-color: white;
 
 #footer_tag{
 width:100%;
-margin:0%;
+margin:10px;
 padding: 10px;
 text-align: center;
 position: absolute;
-bottom:10px;
+bottom:0;
 
 color:#9f7db5;
 background-color:#21284f;
