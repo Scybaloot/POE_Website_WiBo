@@ -40,10 +40,11 @@
 						As a docking robot, one major requirement was the robot be able to locate the charging station from a meter away and align its coils with the coils on the charchign station. 
 					</div>
 
-					<img src="images/sensors.jpg" class="image_tag" alt="System block diagram" width="600px" />
+					<img src="images/sensors.jpg" class="image_tag" alt="System block diagram" width="600px">
 					<div>
 						Figure 1. The IR Navigation Sensors. The IR transceivers are on the two side holes, and the push button is in the middle. 
-					<div>
+					</div>
+
 					<div class="subsection_head">
 						System Design
 					</div>
@@ -54,7 +55,7 @@
 					<img src="images/OverviewStationIR.jpg" class="image_tag" alt="Picture of Sensors" width="600px" />
 					<div>
 						Figure 2. The IR beacon lights attached in a circle on the edge of the charging station. LEDs are arranged around the edge so that the robot can see the charging station from all directions.
-					<div>
+					</div>
 
 					<div>
 						Initial tests were successful at getting motors to respond to differences in ambient light exposure, and this was exciting to see. However, calibrating and filtering the sensors to see infrared light from infrared LEDs proved to be much more challenging. 
@@ -66,6 +67,7 @@
 					</div>
 					<br>
 					<br>
+					<div>
 					Unfortunately, we were not able to completely implement IR Navigation. Initial testing showed promise, but we now know that the tests were not robust enough to reveal some of the problems that we later ran into. We realized too late that the IR receivers we had purchased were not suited to our needs and would not give us the kind of information necessary for IR location sensing. We tried to replace the IR receivers by using two of the IR LEDs as photodiodes. This did not provide clean enough data, so in the end the robot could not locate the beacon and dock at the charging station. 
 					</div>
 
