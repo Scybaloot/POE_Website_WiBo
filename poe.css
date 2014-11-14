@@ -250,6 +250,8 @@ background-color: white;
         padding: 40px;
         display:inline-block;
         text-align: center;
+        width: 50%;
+    	margin: 0 auto;
 >>>>>>> dbee758aeb3a22a9f666725860a4950b766592bc
 }
 
